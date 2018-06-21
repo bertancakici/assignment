@@ -1,0 +1,24 @@
+<div class="row">
+    <table class="table" *ngFor="let userInfo of userInfos">
+        <tr>
+            <td><b>Ad:</b></td>
+            <td>{{userInfo.ad}}</td>
+
+        </tr>
+        <tr>
+            <td><b>Soyad:</b></td>
+            <td> {{ userInfo.soyad}}</td>
+        </tr>
+        <tr>
+            <td><b>Yaş:</b></td>
+            <td> {{ userInfo.yas}}</td>
+        </tr>
+        <tr>
+            <td><b>TC:</b></td>
+            <td> {{ userInfo.tc}}</td>
+        </tr>
+        <tr>
+            <td colspan="2"><a class="btn btn-danger" routerLink="../../delete/{{userInfo.id}}"> Sil</a> </td>
+        </tr>
+    </table>
+</div>

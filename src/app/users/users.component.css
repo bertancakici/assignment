@@ -1,0 +1,29 @@
+a.userListHref,a.userListHref:Hover,a.userListHref:focus{
+    color:black;
+    text-decoration: none;
+}
+
+.table .thead-blue th {
+    color: #fff;
+    background-color: #03a9f4;
+    border-color: #0000ff;
+}
+
+.table th, .table td {
+    border-top: 1px solid #0000ff;
+    color:black;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #CDDC39;
+}
+.table-striped tbody tr {
+    background-color: #03a9f4;
+}
+
+button.btn.btn-userList {
+    border: 1px solid blue;
+}
+.btn-userList {
+    background-color: #ffffff;
+}

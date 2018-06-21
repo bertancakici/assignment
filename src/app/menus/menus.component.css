@@ -1,0 +1,19 @@
+.list-group-item {
+    border: 1px solid #0000FF;
+}
+
+ul.list-group > li {
+    background: #03a9f4 !important;
+}
+.list-group-item a {
+    text-decoration: none;
+    color: #0000FF;
+}
+ul.list-group > li:hover {
+    text-decoration: none;
+    background:#CDDC39 !important;
+}
+
+
+
+

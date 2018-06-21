@@ -1,0 +1,41 @@
+<div class="row">
+        <div class="col-md-6">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1" >AD</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Adınız" aria-label="Username"
+                       aria-describedby="basic-addon1" required #ad>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon2">SOYAD</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Soyadınız" aria-label="Username"
+                       aria-describedby="basic-addon2" required #soyad>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">YAŞ</span>
+                </div>
+                <input type="number" class="form-control" placeholder="Yaşınız" aria-label="Username"
+                       aria-describedby="basic-addon3" required #yas>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon4">TC Kimlik</span>
+                </div>
+                <input type="number" class="form-control" placeholder="TC Kimlik Numaranız" aria-label="Username"
+                       aria-describedby="basic-addon4" required #tc>
+            </div>
+        </div>
+        <div class="col-md-6 offset-6">
+            <button type="button" class="btn btn-primary btnUserSave"  (click)="addUser(ad.value,soyad.value,yas.value,tc.value)">Kaydet</button>
+        </div>
+</div>

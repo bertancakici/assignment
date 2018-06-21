@@ -1,0 +1,31 @@
+<table class="table table-striped table-responsive">
+    <thead class="thead-blue">
+    <tr>
+        <th scope="col">#ID</th>
+        <th scope="col">Ad</th>
+        <th scope="col">Soyad</th>
+        <th scope="col">Yaş</th>
+        <th scope="col">TC Kimlik No</th>
+        <th scope="col">İşlem</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users">
+        <th scope="row">{{ user.id}}</th>
+        <td>{{ user.ad}}</td>
+        <td>{{ user.soyad}}</td>
+        <td>{{ user.yas}}</td>
+        <td>{{ user.tc}}</td>
+        <td>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-userList"><a class="userListHref" routerLink="detail/{{user.id}}"><i class="fa fa-search"></i> Detay</a>
+                </button>
+                <button type="button" class="btn btn-userList"><a class="userListHref" routerLink="update/{{user.id}}"><i class="fa fa-edit"></i> Düzenle</a>
+                </button>
+                <button type="button" class="btn btn-userList"><a class="userListHref" routerLink="delete/{{user.id}}"><i class="fa fa-eraser"></i> Sil</a>
+                </button>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>

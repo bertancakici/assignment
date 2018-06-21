@@ -1,0 +1,42 @@
+<div class="row" *ngFor="let userInfo of userInfos">
+  <input type="hidden" #id value="{{userInfo.id}}">
+  <div class="col-md-12">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1" >AD</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Adınız" aria-label="Username"
+             aria-describedby="basic-addon1" required #ad value="{{userInfo.ad}}">
+    </div>
+  </div>
+  <div class="col-md-12">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon2">SOYAD</span>
+      </div>
+      <input type="text" class="form-control" placeholder="Soyadınız" aria-label="Username"
+             aria-describedby="basic-addon2" required #soyad value="{{userInfo.soyad}}">
+    </div>
+  </div>
+  <div class="col-md-12">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon3">YAŞ</span>
+      </div>
+      <input type="number" class="form-control" placeholder="Yaşınız" aria-label="Username"
+             aria-describedby="basic-addon3" required #yas value="{{userInfo.yas}}">
+    </div>
+  </div>
+  <div class="col-md-12">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon4">TC Kimlik</span>
+      </div>
+      <input type="number" class="form-control" placeholder="TC Kimlik Numaranız" aria-label="Username"
+             aria-describedby="basic-addon4" required #tc value="{{userInfo.tc}}">
+    </div>
+  </div>
+  <div class="col-md-12">
+    <button type="button" class="btn btn-primary btnUserSave" (click)="updateUser(id.value,ad.value,soyad.value,yas.value,tc.value)">Güncelle</button>
+  </div>
+</div>

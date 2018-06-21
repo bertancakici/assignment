@@ -1,0 +1,8 @@
+<div class="jumbotron" *ngFor="let userInfo of userInfos">
+    <h1 class="display-4">{{userInfo.ad }} {{userInfo.soyad}}</h1>
+    <p class="lead">TC: {{userInfo.tc}}</p>
+    <p class="lead">Yaş: {{userInfo.yas}}</p>
+    <hr class="my-4">
+    <p>Silmek İstediğinize Emin Misiniz?</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button" (click)="deleteUser(db_id)">Evet</a>
+</div>

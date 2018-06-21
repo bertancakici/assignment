@@ -1,0 +1,14 @@
+table>tbody>tr {
+    background: #03a9f4;
+    border:none;
+}
+.table td {
+    border: 1px solid blue;
+}
+table>tbody>tr>td:nth-of-type(odd) {
+    text-align: right;
+}
+
+td>a.btn.btn-danger{
+    min-width: 100px;
+}

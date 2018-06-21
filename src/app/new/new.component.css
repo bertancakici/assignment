@@ -1,0 +1,20 @@
+span#basic-addon1,
+span#basic-addon2,
+span#basic-addon3,
+span#basic-addon4,
+.btnUserSave{
+    background:#0000ff;
+    min-width: 100px;
+    color:white;
+}
+
+.form-control {
+    color:black;
+    border: 1px solid #0000ff;
+}
+
+.form-control:focus {
+    color:red;
+    box-shadow: 0 0 0 0.2rem black;
+}
+

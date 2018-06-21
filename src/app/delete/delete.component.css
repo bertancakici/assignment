@@ -1,0 +1,7 @@
+div.jumbotron{
+    background:#cddc39;
+    padding:20px;
+}
+hr {
+    border-top: 1px solid rgb(0, 0, 255);
+}
